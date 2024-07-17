@@ -1,0 +1,40 @@
+online shoppig.....
+
+user can come and do shopping of any item in available quantity......
+
+Functionality
+
+1. user signin/signup
+2. user can see list of items and quantity and add these items to his cart
+3. user can see his cart and can remove items from cart also cartr will show total amount...
+4. user can confirm cart and do payment
+5. admin can add items to the shop
+6. admin can manage quantity and price of item
+7. after the payment item avaibility must be updated 
+8. user can select payment method such as COD, and online ( online will show a number )
+
+
+//Routes
+
+1. user
+     GET /user/users = show the information of all user ( ADMIN )
+     GET /user/:id = show the information of a user 
+     PUT /user/:id = change their password
+
+2. sign
+     POST /signin
+     POST /signup
+
+3. cart
+    /cart/:id = it will show the list of items that added to cart by user
+    /cart/pay = will lead to payment method
+    /cart/pay/cod = will end and update the item database
+    /cart/pay/online = wll end and update the database
+    /cart/:itemname = it will add item to cart ( take input such as item quantity)
+
+4. items
+   /items =  will show the available item name , price of item 
+   /items/:itemname = will show the detailed information of that item
+   /items/add = will add the item to the database ( ADMIN )
+   /items/update = will update the item in database ( ADMIN )
+   
